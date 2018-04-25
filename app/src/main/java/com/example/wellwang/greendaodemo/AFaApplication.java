@@ -3,6 +3,8 @@ package com.example.wellwang.greendaodemo;
 import android.app.Application;
 import android.database.sqlite.SQLiteDatabase;
 
+import cn.bmob.v3.Bmob;
+
 /**
  * Created by Well Wang on 2017/12/19.
  */
@@ -19,6 +21,7 @@ public class AFaApplication extends Application {
     public void onCreate() {
         super.onCreate();
         application = this;
+        Bmob.initialize(this, "b4c6b7c26be46bb205bff8885083c9cf");
         setDatabase();
     }
 

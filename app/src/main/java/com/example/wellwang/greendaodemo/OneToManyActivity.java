@@ -27,7 +27,7 @@ public class OneToManyActivity extends AppCompatActivity {
         Boss boss2=new Boss(null,2,"b");
         bossDao.insert(boss1);
         bossDao.insert(boss2);
-        Member member1=new Member(null,"a1",boss1.getId());
-        Member member2=new Member();
+        //Member member1=new Member(null,"a1",boss1.getId());
+      //  Member member2=new Member();
     }
 }
